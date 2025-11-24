@@ -1,0 +1,26 @@
+{
+  "name": "client-pridehealth",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Pride Health client monorepo",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "clean": "npm run clean --workspaces && rm -rf node_modules"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sixps/client-pridehealth.git"
+  },
+  "license": "UNLICENSED"
+}
+
