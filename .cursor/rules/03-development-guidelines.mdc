@@ -1,0 +1,60 @@
+---
+description: Development guidelines and best practices
+globs: ["**/*"]
+alwaysApply: true
+---
+
+# Development Guidelines
+
+## Package Management Rules
+
+### **ALWAYS use pnpm**
+- **Never suggest npm or yarn** - this project uses pnpm exclusively
+- **Examples**: `pnpm install`, `pnpm build`, `pnpm add package-name`
+- **Workspace commands**: Use `pnpm --filter <app-name>` to target specific apps
+
+## TypeScript Guidelines
+
+- **All new code should be TypeScript** (not JavaScript)
+- **Use strict TypeScript settings** - respect existing `tsconfig.json` configurations
+- **Import types from centralized locations** - don't duplicate interfaces
+- **Handle nullable fields properly** - use proper type guards and null checks
+
+## Code Organization
+
+### **Apps (`apps/`)**
+- Each app is self-contained with its own dependencies
+- Apps can import from shared packages in `packages/`
+- Follow framework-specific conventions (e.g., Next.js app directory structure)
+
+### **Packages (`packages/`)**
+- Shared code used across multiple apps
+- Should be framework-agnostic when possible
+- Export clear, well-typed APIs
+- Include proper TypeScript definitions
+
+## Common LLM Mistakes to Avoid
+
+1. **❌ Suggesting npm/yarn** instead of pnpm
+2. **❌ Creating duplicate interfaces** instead of importing shared types
+3. **❌ Ignoring nullable field handling** in TypeScript
+4. **❌ Suggesting web interfaces** instead of CLI tools for troubleshooting
+5. **❌ Providing manual steps** when CLI commands could automate the process
+6. **❌ Mixing JavaScript and TypeScript** - prefer TypeScript
+7. **❌ Not respecting workspace structure** - understand apps vs packages
+
+## CLI Tools Preference
+
+**Always prefer CLI tools over web interfaces:**
+- **GitHub**: Use `gh` CLI for repository operations, workflow management, issue tracking
+- **Deployment platforms**: Use platform-specific CLIs when available
+- **Benefits**: Reproducible, scriptable, faster, more comprehensive
+
+## Documentation Guidelines
+
+- **Do NOT create unnecessary or excessive .md files** documenting everything
+- **Keep documentation sparse and human-readable**
+- **Avoid AI-generated documentation** that adds no value
+- **Only create documentation when explicitly requested** or when it provides clear utility
+- **Prefer inline code comments** over separate documentation files
+- **If documentation is needed, make it concise and actionable**

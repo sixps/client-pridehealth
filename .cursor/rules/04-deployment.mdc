@@ -1,0 +1,60 @@
+---
+description: Deployment guidelines and CI/CD practices
+globs: ["**/*"]
+alwaysApply: true
+---
+
+# Deployment Guidelines
+
+## General Deployment Principles
+
+- **Respect existing CI/CD pipelines** - don't bypass automated workflows
+- **Test changes locally** before pushing
+- **Follow established deployment patterns** for each app
+- **When in doubt, ask** rather than making assumptions about deployment
+
+## CI/CD Setup
+
+- **GitHub Actions** will be used for CI/CD (not yet configured)
+- **Workflows should be added** to `.github/workflows/` directory
+- **Follow GitHub Actions best practices** when setting up workflows
+- **Document workflow setup** as CI/CD is implemented
+
+## Deployment Workflow
+
+### Standard Process (Once CI/CD is Configured)
+1. **Make changes in code**
+2. **Commit to Git**
+3. **Push to appropriate branch** (typically `main` or feature branch)
+4. **Let GitHub Actions deploy automatically**
+
+### Current State (No CI/CD Yet)
+- Follow app-specific deployment instructions
+- Document deployment steps in app README if needed
+- Use appropriate deployment commands for the platform (Vercel, Netlify, etc.)
+- **GitHub Actions workflows** should be added when ready
+
+## Platform-Specific Notes
+
+### Next.js Apps (e.g., `apps/forms/`)
+- May deploy to Vercel, Netlify, or other platforms
+- Check for platform-specific configuration files
+- Respect environment variables and build settings
+
+### Future Apps
+- Deployment strategy will depend on the app type
+- Document deployment process as apps are added
+
+## Environment Variables
+
+- **Never commit sensitive values** to git
+- **Use environment variable files** (`.env.local`, `.env.example`)
+- **Document required environment variables** in app READMEs
+- **Respect platform-specific** environment variable management
+
+## If User Requests Deployment
+
+1. **Check if CI/CD is configured** - prefer automated deployments
+2. **Verify deployment platform** - understand where the app deploys
+3. **Guide through proper workflow** - don't bypass established processes
+4. **Document if needed** - help establish patterns for future deployments
