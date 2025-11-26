@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'motion/react';
+import { motion, type Variants } from 'motion/react';
 import { FormField as FormFieldType } from '@/types/form';
 import { InputText } from './fields/InputText';
 import { InputEmail } from './fields/InputEmail';
@@ -20,7 +20,7 @@ interface FormFieldProps {
   index: number;
 }
 
-const fieldVariants = {
+const fieldVariants: Variants = {
   hidden: { 
     opacity: 0, 
     y: 20,
