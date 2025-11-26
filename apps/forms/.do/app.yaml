@@ -1,5 +1,9 @@
-name: forms-app
+name: forms
 region: sgp
+
+domains:
+  - domain: forms.pridehealth.clients.6ps.com
+    type: PRIMARY
 
 services:
   - name: forms
