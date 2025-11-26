@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  forms:
+    image: node:20-alpine
+    working_dir: /app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./apps/forms:/app
+      - /app/node_modules
+      - /app/.next
+    command: sh -c "corepack enable pnpm && pnpm install && pnpm dev"
+    networks:
+      - pridehealth
+
+  # Future services can be added here
+  # admin:
+  #   build:
+  #     context: ./apps/admin
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "3001:3000"
+  #   networks:
+  #     - pridehealth
+
+networks:
+  pridehealth:
+    driver: bridge

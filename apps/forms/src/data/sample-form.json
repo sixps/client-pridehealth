@@ -1,0 +1,1637 @@
+{
+  "id": 57,
+  "title": "PrEP In Take Form - Oct 2025",
+  "status": "published",
+  "form_fields": {
+    "fields": [
+      {
+        "index": 0,
+        "element": "input_hidden",
+        "attributes": {
+          "type": "hidden",
+          "name": "user_name",
+          "value": "{user.user_login}"
+        },
+        "settings": {
+          "admin_field_label": "Customer Username"
+        },
+        "editor_options": {
+          "title": "Hidden Field",
+          "icon_class": "ff-edit-hidden-field",
+          "template": "inputHidden"
+        },
+        "uniqElKey": "el_1740548044570"
+      },
+      {
+        "index": 0,
+        "element": "input_hidden",
+        "attributes": {
+          "type": "hidden",
+          "name": "utm_source",
+          "value": "{get.utm_source}"
+        },
+        "settings": {
+          "admin_field_label": "UTM Source"
+        },
+        "editor_options": {
+          "title": "Hidden Field",
+          "icon_class": "ff-edit-hidden-field",
+          "template": "inputHidden"
+        },
+        "uniqElKey": "el_175679911782799"
+      },
+      {
+        "index": 0,
+        "element": "input_hidden",
+        "attributes": {
+          "type": "hidden",
+          "name": "utm_medium",
+          "value": "{get.utm_medium}"
+        },
+        "settings": {
+          "admin_field_label": "UTM Medium"
+        },
+        "editor_options": {
+          "title": "Hidden Field",
+          "icon_class": "ff-edit-hidden-field",
+          "template": "inputHidden"
+        },
+        "uniqElKey": "el_175698250214685"
+      },
+      {
+        "index": 0,
+        "element": "input_hidden",
+        "attributes": {
+          "type": "hidden",
+          "name": "utm_campaign",
+          "value": "{get.utm_campaign}"
+        },
+        "settings": {
+          "admin_field_label": "UTM Campaign"
+        },
+        "editor_options": {
+          "title": "Hidden Field",
+          "icon_class": "ff-edit-hidden-field",
+          "template": "inputHidden"
+        },
+        "uniqElKey": "el_175698254465947"
+      },
+      {
+        "index": 0,
+        "element": "input_hidden",
+        "attributes": {
+          "type": "hidden",
+          "name": "utm_content",
+          "value": "{get.utm_content}"
+        },
+        "settings": {
+          "admin_field_label": "UTM Content"
+        },
+        "editor_options": {
+          "title": "Hidden Field",
+          "icon_class": "ff-edit-hidden-field",
+          "template": "inputHidden"
+        },
+        "uniqElKey": "el_175698256417657"
+      },
+      {
+        "index": 0,
+        "element": "input_hidden",
+        "attributes": {
+          "type": "hidden",
+          "name": "utm_term",
+          "value": "{get.utm_term}"
+        },
+        "settings": {
+          "admin_field_label": "UTM Term"
+        },
+        "editor_options": {
+          "title": "Hidden Field",
+          "icon_class": "ff-edit-hidden-field",
+          "template": "inputHidden"
+        },
+        "uniqElKey": "el_175698259669340"
+      },
+      {
+        "index": 0,
+        "element": "input_hidden",
+        "attributes": {
+          "type": "hidden",
+          "name": "ad_name",
+          "value": "{get.ad_name}"
+        },
+        "settings": {
+          "admin_field_label": "Ad Name"
+        },
+        "editor_options": {
+          "title": "Hidden Field",
+          "icon_class": "ff-edit-hidden-field",
+          "template": "inputHidden"
+        },
+        "uniqElKey": "el_175698261294363"
+      },
+      {
+        "index": 0,
+        "element": "input_hidden",
+        "attributes": {
+          "type": "hidden",
+          "name": "user_email",
+          "value": "{user.user_email}"
+        },
+        "settings": {
+          "admin_field_label": "Customer Email"
+        },
+        "editor_options": {
+          "title": "Hidden Field",
+          "icon_class": "ff-edit-hidden-field",
+          "template": "inputHidden"
+        },
+        "uniqElKey": "el_174054806372690"
+      },
+      {
+        "index": 0,
+        "element": "input_hidden",
+        "attributes": {
+          "type": "hidden",
+          "name": "referrer",
+          "value": "{http_referer}"
+        },
+        "settings": {
+          "admin_field_label": "Referrer URL"
+        },
+        "editor_options": {
+          "title": "Hidden Field",
+          "icon_class": "ff-edit-hidden-field",
+          "template": "inputHidden"
+        },
+        "uniqElKey": "el_17569827314293"
+      },
+      {
+        "index": 0,
+        "element": "input_hidden",
+        "attributes": {
+          "type": "hidden",
+          "name": "ip_address",
+          "value": "{ip}"
+        },
+        "settings": {
+          "admin_field_label": "IP Address"
+        },
+        "editor_options": {
+          "title": "Hidden Field",
+          "icon_class": "ff-edit-hidden-field",
+          "template": "inputHidden"
+        },
+        "uniqElKey": "el_1747814554411"
+      },
+      {
+        "index": 0,
+        "element": "input_hidden",
+        "attributes": {
+          "type": "hidden",
+          "name": "country",
+          "value": ""
+        },
+        "settings": {
+          "admin_field_label": "Country"
+        },
+        "editor_options": {
+          "title": "Hidden Field",
+          "icon_class": "ff-edit-hidden-field",
+          "template": "inputHidden"
+        },
+        "uniqElKey": "el_1752571729380"
+      },
+      {
+        "index": 8,
+        "element": "input_radio",
+        "attributes": {
+          "type": "radio",
+          "name": "have_you_used_PrEP_before",
+          "value": ""
+        },
+        "settings": {
+          "dynamic_default_value": "",
+          "container_class": "prep_mailerlite_integration",
+          "label": "Have you used PrEP before?",
+          "admin_field_label": "Have you used PrEP before?",
+          "label_placement": "",
+          "display_type": "",
+          "help_message": "",
+          "randomize_options": "no",
+          "advanced_options": [
+            {
+              "label": "Yes",
+              "value": "yes",
+              "calc_value": "",
+              "image": "",
+              "id": 0
+            },
+            {
+              "label": "No",
+              "value": "No",
+              "calc_value": "",
+              "image": "",
+              "id": 1
+            }
+          ],
+          "calc_value_status": false,
+          "enable_image_input": false,
+          "values_visible": false,
+          "validation_rules": {
+            "required": {
+              "value": true,
+              "message": "This field is required",
+              "global_message": "This field is required",
+              "global": true
+            }
+          },
+          "conditional_logics": {
+            "type": "any",
+            "status": false,
+            "conditions": [
+              {
+                "field": "",
+                "value": "",
+                "operator": ""
+              }
+            ],
+            "condition_groups": [
+              {
+                "rules": [
+                  {
+                    "field": "",
+                    "value": "",
+                    "operator": ""
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              }
+            ]
+          },
+          "layout_class": ""
+        },
+        "editor_options": {
+          "title": "Radio Field",
+          "icon_class": "ff-edit-radio",
+          "element": "input-radio",
+          "template": "inputCheckable"
+        },
+        "uniqElKey": "el_1740548140881",
+        "options": {
+          "yes": "Yes, I'm interested in PrEP",
+          "no": "No, I'm not interested",
+          "learn_more": "I'd like to learn more"
+        }
+      },
+      {
+        "index": 7,
+        "element": "select",
+        "attributes": {
+          "name": "how_many_sexual_encounters_have_you_had_in_the_past_3_months",
+          "value": "",
+          "id": "",
+          "class": ""
+        },
+        "settings": {
+          "dynamic_default_value": "",
+          "label": "How many sexual encounters have you had in the past 3 months?",
+          "admin_field_label": "How many sexual encounters have you had in the past 3 months?",
+          "help_message": "",
+          "container_class": "",
+          "label_placement": "",
+          "placeholder": "- Select -",
+          "advanced_options": [
+            {
+              "label": "0 - 3 partners",
+              "value": "0 - 3 partners",
+              "id": 0
+            },
+            {
+              "label": "3 - 6 partners",
+              "value": "3 - 6 partners",
+              "id": 1
+            },
+            {
+              "label": ">7 partners",
+              "value": ">7 partners",
+              "id": 2
+            },
+            {
+              "label": "Prefer not to say",
+              "value": "Prefer not to say",
+              "id": 3
+            }
+          ],
+          "calc_value_status": false,
+          "enable_image_input": false,
+          "values_visible": false,
+          "enable_select_2": "no",
+          "validation_rules": {
+            "required": {
+              "value": true,
+              "message": "This field is required",
+              "global_message": "This field is required",
+              "global": true
+            }
+          },
+          "conditional_logics": {
+            "type": "any",
+            "status": false,
+            "conditions": [
+              {
+                "field": "have_you_used_PrEP_before",
+                "value": "No; will require a virtual doctor\u2019s consult",
+                "operator": "="
+              }
+            ],
+            "condition_groups": [
+              {
+                "rules": [
+                  {
+                    "field": "",
+                    "value": "",
+                    "operator": ""
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              }
+            ]
+          },
+          "randomize_options": "no"
+        },
+        "editor_options": {
+          "title": "Dropdown",
+          "icon_class": "ff-edit-dropdown",
+          "element": "select",
+          "template": "select"
+        },
+        "uniqElKey": "el_1740562129025",
+        "options": {
+          "value1": "Select Option 1",
+          "value2": "Select Option 2",
+          "value3": "Select Option 3"
+        }
+      },
+      {
+        "index": 8,
+        "element": "input_radio",
+        "attributes": {
+          "type": "radio",
+          "name": "how_often_do_you_use_a_condom",
+          "value": ""
+        },
+        "settings": {
+          "dynamic_default_value": "",
+          "container_class": "",
+          "label": "How often do you use a condom?",
+          "admin_field_label": "How often do you use a condom?",
+          "label_placement": "",
+          "display_type": "",
+          "help_message": "",
+          "randomize_options": "no",
+          "advanced_options": [
+            {
+              "label": "Always",
+              "value": "Always",
+              "calc_value": "",
+              "image": "",
+              "id": 0
+            },
+            {
+              "label": "Sometimes",
+              "value": "Sometimes",
+              "calc_value": "",
+              "image": "",
+              "id": 1
+            },
+            {
+              "label": "Never",
+              "value": "Never",
+              "calc_value": "",
+              "image": "",
+              "id": 2
+            }
+          ],
+          "calc_value_status": false,
+          "enable_image_input": false,
+          "values_visible": false,
+          "validation_rules": {
+            "required": {
+              "value": true,
+              "message": "This field is required",
+              "global_message": "This field is required",
+              "global": true
+            }
+          },
+          "conditional_logics": {
+            "type": "any",
+            "status": false,
+            "conditions": [
+              {
+                "field": "have_you_used_PrEP_before",
+                "value": "No; will require a virtual doctor\u2019s consult",
+                "operator": "="
+              }
+            ],
+            "condition_groups": [
+              {
+                "rules": [
+                  {
+                    "field": "",
+                    "value": "",
+                    "operator": ""
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              }
+            ]
+          },
+          "layout_class": ""
+        },
+        "editor_options": {
+          "title": "Radio Field",
+          "icon_class": "ff-edit-radio",
+          "element": "input-radio",
+          "template": "inputCheckable"
+        },
+        "uniqElKey": "el_1740562395112",
+        "options": {
+          "option1": "Option 1",
+          "option2": "Option 2",
+          "option3": "Option 3"
+        }
+      },
+      {
+        "index": 9,
+        "element": "input_checkbox",
+        "attributes": {
+          "type": "checkbox",
+          "name": "checkbox",
+          "value": []
+        },
+        "settings": {
+          "dynamic_default_value": "",
+          "container_class": "",
+          "label": "Have you had sex with anyone who is: ",
+          "admin_field_label": "",
+          "label_placement": "",
+          "display_type": "",
+          "help_message": "",
+          "advanced_options": [
+            {
+              "label": "Uses injectable drugs",
+              "value": "Uses injectable drugs",
+              "calc_value": "",
+              "image": "",
+              "id": 0
+            },
+            {
+              "label": "Gay/Bisexual Men",
+              "value": "Gay/Bisexual Men",
+              "calc_value": "",
+              "image": "",
+              "id": 1
+            },
+            {
+              "label": "Transgender",
+              "value": "Transgender",
+              "calc_value": "",
+              "image": "",
+              "id": 2
+            },
+            {
+              "label": "None",
+              "value": "None",
+              "calc_value": "",
+              "image": "",
+              "id": 3
+            }
+          ],
+          "calc_value_status": false,
+          "enable_image_input": false,
+          "values_visible": false,
+          "randomize_options": "no",
+          "validation_rules": {
+            "required": {
+              "value": true,
+              "message": "This field is required",
+              "global_message": "This field is required",
+              "global": true
+            }
+          },
+          "conditional_logics": {
+            "type": "all",
+            "status": false,
+            "conditions": [
+              {
+                "field": "have_you_used_PrEP_before",
+                "value": "No; will require a virtual doctor\u2019s consult",
+                "operator": "="
+              }
+            ],
+            "condition_groups": [
+              {
+                "rules": [
+                  {
+                    "field": "",
+                    "value": "",
+                    "operator": ""
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              }
+            ]
+          },
+          "layout_class": "",
+          "enable_other_option": "no",
+          "other_option_label": "Other",
+          "other_option_placeholder": "Please specify..."
+        },
+        "editor_options": {
+          "title": "Checkbox",
+          "icon_class": "ff-edit-checkbox-1",
+          "template": "inputCheckable"
+        },
+        "uniqElKey": "el_1740564057691",
+        "options": {
+          "option1": "Checkbox Option 1",
+          "option2": "Checkbox Option 2",
+          "option3": "Checkbox Option 3"
+        }
+      },
+      {
+        "index": 9,
+        "element": "input_checkbox",
+        "attributes": {
+          "type": "checkbox",
+          "name": "would_you_consider_using_these_STI_preventive_options",
+          "value": []
+        },
+        "settings": {
+          "dynamic_default_value": "",
+          "container_class": "",
+          "label": "Would you consider using these sexual wellness preventive options?",
+          "admin_field_label": "",
+          "label_placement": "",
+          "display_type": "",
+          "help_message": "",
+          "advanced_options": [
+            {
+              "label": "Doxycycline (to reduce risk of syphilis, chlamydia, gonorrhea)",
+              "value": "Doxycycline (to reduce risk of syphilis, chlamydia, gonorrhea)",
+              "id": 0
+            },
+            {
+              "label": "At-home HIV test kit",
+              "value": "At-home HIV test kit",
+              "id": 1
+            },
+            {
+              "label": "Post anal sex, anti-inflammatory anal care",
+              "value": "Post anal sex, anti-inflammatory anal care",
+              "id": 2
+            },
+            {
+              "label": "Antivirals to manage herpes (HSV)",
+              "value": "Antivirals to manage herpes (HSV)",
+              "id": 3
+            },
+            {
+              "label": "None",
+              "value": "None",
+              "calc_value": "",
+              "image": ""
+            }
+          ],
+          "calc_value_status": false,
+          "enable_image_input": false,
+          "values_visible": false,
+          "randomize_options": "no",
+          "validation_rules": {
+            "required": {
+              "value": false,
+              "message": "This field is required",
+              "global_message": "This field is required",
+              "global": true
+            }
+          },
+          "conditional_logics": {
+            "type": "all",
+            "status": false,
+            "conditions": [
+              {
+                "field": "have_you_used_PrEP_before",
+                "value": "No; will require a virtual doctor\u2019s consult",
+                "operator": "="
+              }
+            ],
+            "condition_groups": [
+              {
+                "rules": [
+                  {
+                    "field": "",
+                    "value": "",
+                    "operator": ""
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              }
+            ]
+          },
+          "layout_class": "",
+          "enable_other_option": "no",
+          "other_option_label": "Other",
+          "other_option_placeholder": "Please specify..."
+        },
+        "editor_options": {
+          "title": "Checkbox",
+          "icon_class": "ff-edit-checkbox-1",
+          "template": "inputCheckable"
+        },
+        "uniqElKey": "el_17549110705341",
+        "options": {
+          "option1": "Checkbox Option 1",
+          "option2": "Checkbox Option 2",
+          "option3": "Checkbox Option 3"
+        }
+      },
+      {
+        "index": 9,
+        "element": "input_checkbox",
+        "attributes": {
+          "type": "checkbox",
+          "name": "which_of_these_vaccinations_have_you_had",
+          "value": []
+        },
+        "settings": {
+          "dynamic_default_value": "",
+          "container_class": "",
+          "label": "Which of these vaccinations have you had?",
+          "admin_field_label": "",
+          "label_placement": "",
+          "display_type": "",
+          "help_message": "",
+          "advanced_options": [
+            {
+              "label": "Human papillomavirus \u201cHPV\u201d (Gardasil)",
+              "value": "Human papillomavirus \u201cHPV\u201d (Gardasil)",
+              "id": 0
+            },
+            {
+              "label": "Hepatitis A",
+              "value": "Hepatitis A",
+              "id": 1
+            },
+            {
+              "label": "Hepatitis B",
+              "value": "Hepatitis B",
+              "id": 2
+            },
+            {
+              "label": "MPox",
+              "value": "MPox",
+              "id": 3
+            },
+            {
+              "label": "Gonorrhea (Beserox)",
+              "value": "Gonorrhea (Beserox)",
+              "id": 4
+            },
+            {
+              "label": "None",
+              "value": "None",
+              "calc_value": "",
+              "image": ""
+            }
+          ],
+          "calc_value_status": false,
+          "enable_image_input": false,
+          "values_visible": false,
+          "randomize_options": "no",
+          "validation_rules": {
+            "required": {
+              "value": false,
+              "message": "This field is required",
+              "global_message": "This field is required",
+              "global": true
+            }
+          },
+          "conditional_logics": {
+            "type": "all",
+            "status": false,
+            "conditions": [
+              {
+                "field": "have_you_used_PrEP_before",
+                "value": "No; will require a virtual doctor\u2019s consult",
+                "operator": "="
+              }
+            ],
+            "condition_groups": [
+              {
+                "rules": [
+                  {
+                    "field": "",
+                    "value": "",
+                    "operator": ""
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              }
+            ]
+          },
+          "layout_class": "",
+          "enable_other_option": "no",
+          "other_option_label": "Other",
+          "other_option_placeholder": "Please specify..."
+        },
+        "editor_options": {
+          "title": "Checkbox",
+          "icon_class": "ff-edit-checkbox-1",
+          "template": "inputCheckable"
+        },
+        "uniqElKey": "el_175498416030430",
+        "options": {
+          "option1": "Checkbox Option 1",
+          "option2": "Checkbox Option 2",
+          "option3": "Checkbox Option 3"
+        }
+      },
+      {
+        "index": 2,
+        "element": "input_text",
+        "attributes": {
+          "type": "text",
+          "name": "what_mobile_number_can_we_contact_you_to_verify_the_prescription",
+          "value": "",
+          "class": "",
+          "placeholder": "Include country code (e.g +66)",
+          "maxlength": ""
+        },
+        "settings": {
+          "container_class": "",
+          "label": "What is your WhatsApp number?",
+          "label_placement": "",
+          "admin_field_label": "WhatsApp Number",
+          "help_message": "",
+          "prefix_label": "",
+          "suffix_label": "",
+          "validation_rules": {
+            "required": {
+              "value": true,
+              "message": "WhatsApp Number is required",
+              "global_message": "This field is required",
+              "global": false
+            }
+          },
+          "conditional_logics": {
+            "type": "all",
+            "status": false,
+            "conditions": [
+              {
+                "field": "have_you_used_PrEP_before",
+                "value": "yes",
+                "operator": "="
+              },
+              {
+                "field": "do_have_a_PrEP_prescription_or_recent_HIV_blood_test",
+                "value": "yes",
+                "operator": "="
+              }
+            ],
+            "condition_groups": [
+              {
+                "rules": [
+                  {
+                    "field": "",
+                    "value": "",
+                    "operator": ""
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              }
+            ]
+          },
+          "is_unique": "no",
+          "unique_validation_message": "This value need to be unique."
+        },
+        "editor_options": {
+          "title": "Simple Text",
+          "icon_class": "ff-edit-text",
+          "template": "inputText"
+        },
+        "uniqElKey": "el_1759771171824"
+      },
+      {
+        "index": 8,
+        "element": "input_radio",
+        "attributes": {
+          "type": "radio",
+          "name": "do_have_a_PrEP_prescription_or_recent_HIV_blood_test",
+          "value": ""
+        },
+        "settings": {
+          "dynamic_default_value": "",
+          "container_class": "",
+          "label": "Do you have a PrEP prescription or recent HIV blood test? ",
+          "admin_field_label": "",
+          "label_placement": "",
+          "display_type": "",
+          "help_message": "",
+          "randomize_options": "no",
+          "advanced_options": [
+            {
+              "label": "Yes",
+              "value": "yes",
+              "calc_value": "",
+              "image": "",
+              "id": 0
+            },
+            {
+              "label": "No",
+              "value": "no",
+              "calc_value": "",
+              "image": "",
+              "id": 1
+            }
+          ],
+          "calc_value_status": false,
+          "enable_image_input": false,
+          "values_visible": false,
+          "validation_rules": {
+            "required": {
+              "value": true,
+              "message": "This field is required",
+              "global_message": "This field is required",
+              "global": true
+            }
+          },
+          "conditional_logics": {
+            "type": "all",
+            "status": true,
+            "conditions": [
+              {
+                "field": "have_you_used_PrEP_before",
+                "value": "yes",
+                "operator": "="
+              }
+            ],
+            "condition_groups": [
+              {
+                "rules": [
+                  {
+                    "field": "",
+                    "value": "",
+                    "operator": ""
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              }
+            ]
+          },
+          "layout_class": ""
+        },
+        "editor_options": {
+          "title": "Radio Field",
+          "icon_class": "ff-edit-radio",
+          "element": "input-radio",
+          "template": "inputCheckable"
+        },
+        "uniqElKey": "el_1759829736117",
+        "options": {
+          "yes": "Yes, I'm interested in PrEP",
+          "no": "No, I'm not interested",
+          "learn_more": "I'd like to learn more"
+        }
+      },
+      {
+        "index": 7,
+        "element": "select",
+        "attributes": {
+          "name": "You_will_need_to_schedule_an_HIV_blood_test__Please_choose_an_option",
+          "value": "",
+          "id": "",
+          "class": ""
+        },
+        "settings": {
+          "dynamic_default_value": "",
+          "label": "You will need to schedule an HIV blood test. Please choose an option:",
+          "admin_field_label": "",
+          "help_message": "",
+          "container_class": "clinic_selector",
+          "label_placement": "",
+          "placeholder": "- Select -",
+          "advanced_options": [
+            {
+              "label": "Schedule a virtual doctor",
+              "value": "Schedule a virtual doctor",
+              "id": 0
+            },
+            {
+              "label": "Send me an HIV self test kit",
+              "value": "Send me an HIV self test kit",
+              "id": 1
+            },
+            {
+              "label": "Full Sexual Health Screening @ Shields Clinic (near Saladaeng BTS)",
+              "value": "Full Sexual Health Screening @ Shields Clinic (near Saladaeng BTS)",
+              "id": 2
+            }
+          ],
+          "calc_value_status": false,
+          "enable_image_input": false,
+          "values_visible": false,
+          "enable_select_2": "no",
+          "validation_rules": {
+            "required": {
+              "value": true,
+              "message": "This field is required",
+              "global_message": "This field is required",
+              "global": true
+            }
+          },
+          "conditional_logics": {
+            "type": "all",
+            "status": true,
+            "conditions": [
+              {
+                "field": "have_you_used_PrEP_before",
+                "value": "yes",
+                "operator": "="
+              },
+              {
+                "field": "do_have_a_PrEP_prescription_or_recent_HIV_blood_test",
+                "value": "no",
+                "operator": "="
+              }
+            ],
+            "condition_groups": [
+              {
+                "rules": [
+                  {
+                    "field": "",
+                    "value": "",
+                    "operator": ""
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              }
+            ]
+          },
+          "randomize_options": "no"
+        },
+        "editor_options": {
+          "title": "Dropdown",
+          "icon_class": "ff-edit-dropdown",
+          "element": "select",
+          "template": "select"
+        },
+        "uniqElKey": "el_1754911427654",
+        "options": {
+          "value1": "Select Option 1",
+          "value2": "Select Option 2",
+          "value3": "Select Option 3"
+        }
+      },
+      {
+        "index": 17,
+        "element": "custom_html",
+        "attributes": [],
+        "settings": {
+          "html_codes": "<p style=\"text-align: center;\">\u00a0</p>\n<p style=\"text-align: center;\">A HIV test kit has been added to you cart.\u00a0<br /><br />This self test is essential to make sure PrEP is safe and effective for you!<br /><br /></p>",
+          "conditional_logics": {
+            "type": "group",
+            "status": true,
+            "conditions": [
+              {
+                "field": "have_you_used_PrEP_before",
+                "value": "yes",
+                "operator": "="
+              },
+              {
+                "field": "do_have_a_PrEP_prescription_or_recent_HIV_blood_test",
+                "value": "no",
+                "operator": "="
+              },
+              {
+                "field": "You_will_need_to_schedule_an_HIV_blood_test__Please_choose_an_option",
+                "value": "Send me a HIV self test kit",
+                "operator": "="
+              }
+            ],
+            "condition_groups": [
+              {
+                "rules": [
+                  {
+                    "field": "have_you_used_PrEP_before",
+                    "value": "yes",
+                    "operator": "="
+                  },
+                  {
+                    "field": "do_have_a_PrEP_prescription_or_recent_HIV_blood_test",
+                    "value": "no",
+                    "operator": "="
+                  },
+                  {
+                    "field": "You_will_need_to_schedule_an_HIV_blood_test__Please_choose_an_option",
+                    "value": "Send me an HIV self test kit",
+                    "operator": "="
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              }
+            ]
+          },
+          "container_class": "add_hiv_test_kit"
+        },
+        "editor_options": {
+          "title": "Custom HTML",
+          "icon_class": "ff-edit-html",
+          "template": "customHTML"
+        },
+        "uniqElKey": "el_1759829427806"
+      },
+      {
+        "index": 20,
+        "element": "fcal_booking",
+        "attributes": {
+          "name": "Please_schedule_a_time_for_your_blood_test_consultation_collection_at_Shield_Clinic",
+          "data-type": "fcal_booking"
+        },
+        "settings": {
+          "label": "Please schedule a time for your full Sexual Health Screening at Shield Clinic",
+          "admin_field_label": "Please schedule a time for your blood test, consultation & collection at Shield Clinic",
+          "event_id": 32,
+          "booking_calendar": "",
+          "conditional_logics": {
+            "type": "all",
+            "status": true,
+            "conditions": [
+              {
+                "field": "have_you_used_PrEP_before",
+                "value": "yes",
+                "operator": "="
+              },
+              {
+                "field": "do_have_a_PrEP_prescription_or_recent_HIV_blood_test",
+                "value": "no",
+                "operator": "="
+              },
+              {
+                "field": "You_will_need_to_schedule_an_HIV_blood_test__Please_choose_an_option",
+                "value": "Full Sexual Health Screening @ Shields Clinic (near Saladaeng BTS)",
+                "operator": "="
+              }
+            ],
+            "condition_groups": [
+              {
+                "rules": [
+                  {
+                    "field": "",
+                    "value": "",
+                    "operator": ""
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              }
+            ]
+          },
+          "container_class": "",
+          "cal_guest_fields": {
+            "email_field": "email",
+            "name_field": "user_name",
+            "host_info": "hide"
+          },
+          "validation_rules": {
+            "required": {
+              "value": true,
+              "message": "Appointment Date & Time is required",
+              "global": false,
+              "global_message": "This field is required"
+            }
+          }
+        },
+        "editor_options": {
+          "title": "FluentBooking Field",
+          "icon_class": "el-icon-date",
+          "template": "inputCalendar"
+        },
+        "uniqElKey": "el_1754911535903"
+      },
+      {
+        "index": 16,
+        "element": "input_file",
+        "attributes": {
+          "type": "file",
+          "name": "please_upload_your_blood_test_or_prescription",
+          "value": "",
+          "id": "",
+          "class": ""
+        },
+        "settings": {
+          "container_class": "image_meta",
+          "label": "Please upload your HIV blood test results or prescription",
+          "admin_field_label": "",
+          "label_placement": "",
+          "btn_text": "Choose File",
+          "help_message": "",
+          "upload_file_location": "default",
+          "file_location_type": "follow_global_settings",
+          "upload_bttn_ui": "",
+          "validation_rules": {
+            "required": {
+              "value": true,
+              "message": "This field is required",
+              "global_message": "This field is required",
+              "global": true
+            },
+            "max_file_size": {
+              "value": null,
+              "message": "Validation fails for maximum file size",
+              "global_message": "Validation fails for maximum file size",
+              "global": true
+            },
+            "max_file_count": {
+              "value": 1,
+              "message": "Validation fails for maximum file count",
+              "global_message": "Validation fails for maximum file count",
+              "global": true
+            },
+            "allowed_file_types": {
+              "value": [
+                "jpg|jpeg|gif|png|bmp",
+                "pdf",
+                "doc|ppt|pps|xls|mdb|docx|xlsx|pptx|odt|odp|ods|odg|odc|odb|odf|rtf|txt"
+              ],
+              "message": "Allowed image types does not match",
+              "global_message": "Invalid file type",
+              "global": true
+            }
+          },
+          "conditional_logics": {
+            "type": "group",
+            "status": true,
+            "conditions": [
+              {
+                "field": "have_you_used_PrEP_before",
+                "value": "yes",
+                "operator": "="
+              },
+              {
+                "field": "do_have_a_PrEP_prescription_or_recent_HIV_blood_test",
+                "value": "yes",
+                "operator": "="
+              }
+            ],
+            "condition_groups": [
+              {
+                "rules": [
+                  {
+                    "field": "have_you_used_PrEP_before",
+                    "value": "yes",
+                    "operator": "="
+                  },
+                  {
+                    "field": "do_have_a_PrEP_prescription_or_recent_HIV_blood_test",
+                    "value": "yes",
+                    "operator": "="
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              }
+            ]
+          }
+        },
+        "editor_options": {
+          "title": "File Upload",
+          "icon_class": "ff-edit-files",
+          "template": "inputFile"
+        },
+        "uniqElKey": "el_1754911551155"
+      },
+      {
+        "index": 8,
+        "element": "input_radio",
+        "attributes": {
+          "type": "radio",
+          "name": "do_you_plan_to_use_PrEP_daily_or_on_demand_YES",
+          "value": ""
+        },
+        "settings": {
+          "dynamic_default_value": "",
+          "container_class": "",
+          "label": "Do you plan to use PrEP daily or on-demand?",
+          "admin_field_label": "Do you plan to use PrEP daily or on-demand?",
+          "label_placement": "",
+          "display_type": "",
+          "help_message": "",
+          "randomize_options": "no",
+          "advanced_options": [
+            {
+              "label": "Daily",
+              "value": "Daily",
+              "calc_value": "",
+              "image": "",
+              "id": 0
+            },
+            {
+              "label": "On-Demand",
+              "value": "On-Demand",
+              "calc_value": "",
+              "image": "",
+              "id": 1
+            }
+          ],
+          "calc_value_status": false,
+          "enable_image_input": false,
+          "values_visible": false,
+          "validation_rules": {
+            "required": {
+              "value": true,
+              "message": "This field is required",
+              "global_message": "This field is required",
+              "global": true
+            }
+          },
+          "conditional_logics": {
+            "type": "group",
+            "status": true,
+            "conditions": [
+              {
+                "field": "do_have_a_PrEP_prescription_or_recent_HIV_blood_test",
+                "value": "yes",
+                "operator": "="
+              },
+              {
+                "field": "you_will_need_to_schedule_a_HIV_blood_test_please_choose_an_option",
+                "value": "Send me a HIV self test kit",
+                "operator": "="
+              },
+              {
+                "field": "have_you_used_PrEP_before",
+                "value": "No",
+                "operator": "="
+              }
+            ],
+            "condition_groups": [
+              {
+                "rules": [
+                  {
+                    "field": "have_you_used_PrEP_before",
+                    "value": "yes",
+                    "operator": "="
+                  },
+                  {
+                    "field": "do_have_a_PrEP_prescription_or_recent_HIV_blood_test",
+                    "value": "no",
+                    "operator": "="
+                  },
+                  {
+                    "field": "You_will_need_to_schedule_an_HIV_blood_test__Please_choose_an_option",
+                    "value": "Send me an HIV self test kit",
+                    "operator": "="
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              },
+              {
+                "rules": [
+                  {
+                    "field": "have_you_used_PrEP_before",
+                    "value": "yes",
+                    "operator": "="
+                  },
+                  {
+                    "field": "do_have_a_PrEP_prescription_or_recent_HIV_blood_test",
+                    "value": "yes",
+                    "operator": "="
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              }
+            ]
+          },
+          "layout_class": ""
+        },
+        "editor_options": {
+          "title": "Radio Field",
+          "icon_class": "ff-edit-radio",
+          "element": "input-radio",
+          "template": "inputCheckable"
+        },
+        "uniqElKey": "el_1754911612913",
+        "options": {
+          "yes": "Yes, I'm interested in PrEP",
+          "no": "No, I'm not interested",
+          "learn_more": "I'd like to learn more"
+        }
+      },
+      {
+        "index": 8,
+        "element": "input_radio",
+        "attributes": {
+          "type": "radio",
+          "name": "Which_do_prefer_next",
+          "value": ""
+        },
+        "settings": {
+          "dynamic_default_value": "",
+          "container_class": "",
+          "label": "It is recommended for first time PrEP users to consult a doctor:",
+          "admin_field_label": "It is recommended for first time PrEP users to consult a doctor:",
+          "label_placement": "",
+          "display_type": "",
+          "help_message": "",
+          "randomize_options": "no",
+          "advanced_options": [
+            {
+              "label": "<b>Speak virtually</b> with a sexual health doctor and get PrEP prescribed",
+              "value": "<b>Speak virtually</b> with a sexual health doctor and get PrEP prescribed",
+              "id": 0
+            },
+            {
+              "label": "<b>Self check</b> using AI Sexual Health Doctor for PrEP prescription",
+              "value": "<b>Self check</b> using AI Sexual Health Doctor for PrEP prescription",
+              "id": 1
+            }
+          ],
+          "calc_value_status": false,
+          "enable_image_input": false,
+          "values_visible": false,
+          "validation_rules": {
+            "required": {
+              "value": true,
+              "message": "This field is required",
+              "global_message": "This field is required",
+              "global": true
+            }
+          },
+          "conditional_logics": {
+            "type": "all",
+            "status": true,
+            "conditions": [
+              {
+                "field": "have_you_used_PrEP_before",
+                "value": "No",
+                "operator": "="
+              }
+            ],
+            "condition_groups": [
+              {
+                "rules": [
+                  {
+                    "field": "have_you_used_PrEP_before",
+                    "value": "No",
+                    "operator": "="
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              }
+            ]
+          },
+          "layout_class": ""
+        },
+        "editor_options": {
+          "title": "Radio Field",
+          "icon_class": "ff-edit-radio",
+          "element": "input-radio",
+          "template": "inputCheckable"
+        },
+        "uniqElKey": "el_175799993339860",
+        "options": {
+          "option1": "Option 1",
+          "option2": "Option 2",
+          "option3": "Option 3"
+        }
+      },
+      {
+        "index": 8,
+        "element": "input_radio",
+        "attributes": {
+          "type": "radio",
+          "name": "what_s_the_most_convenient_way_for_you_to_receive_your_PrEP_refills",
+          "value": ""
+        },
+        "settings": {
+          "dynamic_default_value": "",
+          "container_class": "",
+          "label": "What\u2019s the most convenient way for you to receive your PrEP refills?",
+          "admin_field_label": "What\u2019s the most convenient way for you to receive your PrEP refills?",
+          "label_placement": "",
+          "display_type": "",
+          "help_message": "",
+          "randomize_options": "no",
+          "advanced_options": [
+            {
+              "label": "Quarterly subscription",
+              "value": "Quarterly subscription",
+              "id": 0
+            },
+            {
+              "label": "Order as needed",
+              "value": "Order as needed",
+              "id": 1
+            }
+          ],
+          "calc_value_status": false,
+          "enable_image_input": false,
+          "values_visible": false,
+          "validation_rules": {
+            "required": {
+              "value": true,
+              "message": "This field is required",
+              "global_message": "This field is required",
+              "global": true
+            }
+          },
+          "conditional_logics": {
+            "type": "group",
+            "status": true,
+            "conditions": [
+              {
+                "field": "do_have_a_PrEP_prescription_or_recent_HIV_blood_test",
+                "value": "yes",
+                "operator": "="
+              },
+              {
+                "field": "you_will_need_to_schedule_a_HIV_blood_test_please_choose_an_option",
+                "value": "Send me a HIV self test kit",
+                "operator": "="
+              }
+            ],
+            "condition_groups": [
+              {
+                "rules": [
+                  {
+                    "field": "have_you_used_PrEP_before",
+                    "value": "yes",
+                    "operator": "="
+                  },
+                  {
+                    "field": "do_have_a_PrEP_prescription_or_recent_HIV_blood_test",
+                    "value": "no",
+                    "operator": "="
+                  },
+                  {
+                    "field": "You_will_need_to_schedule_an_HIV_blood_test__Please_choose_an_option",
+                    "value": "Send me an HIV self test kit",
+                    "operator": "="
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              },
+              {
+                "rules": [
+                  {
+                    "field": "have_you_used_PrEP_before",
+                    "value": "yes",
+                    "operator": "="
+                  },
+                  {
+                    "field": "do_have_a_PrEP_prescription_or_recent_HIV_blood_test",
+                    "value": "yes",
+                    "operator": "="
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              }
+            ]
+          },
+          "layout_class": ""
+        },
+        "editor_options": {
+          "title": "Radio Field",
+          "icon_class": "ff-edit-radio",
+          "element": "input-radio",
+          "template": "inputCheckable"
+        },
+        "uniqElKey": "el_175523932311774",
+        "options": {
+          "yes": "Yes, I'm interested in PrEP",
+          "no": "No, I'm not interested",
+          "learn_more": "I'd like to learn more"
+        }
+      },
+      {
+        "index": 1,
+        "element": "input_email",
+        "attributes": {
+          "type": "email",
+          "name": "email",
+          "value": "",
+          "id": "",
+          "class": "",
+          "placeholder": "Email Address"
+        },
+        "settings": {
+          "container_class": "",
+          "label": "What is your email address?",
+          "label_placement": "",
+          "help_message": "",
+          "admin_field_label": "",
+          "prefix_label": "",
+          "suffix_label": "",
+          "validation_rules": {
+            "required": {
+              "value": true,
+              "message": "This field is required",
+              "global_message": "This field is required",
+              "global": true
+            },
+            "email": {
+              "value": true,
+              "message": "This field must contain a valid email",
+              "global_message": "This field must contain a valid email",
+              "global": true
+            }
+          },
+          "conditional_logics": {
+            "type": "any",
+            "status": false,
+            "conditions": [
+              {
+                "field": "",
+                "value": "",
+                "operator": ""
+              }
+            ],
+            "condition_groups": [
+              {
+                "rules": [
+                  {
+                    "field": "",
+                    "value": "",
+                    "operator": ""
+                  }
+                ],
+                "title": "",
+                "isEditingTitle": false,
+                "isPreviewOpen": false,
+                "isGroupOpen": true
+              }
+            ]
+          },
+          "is_unique": "no",
+          "unique_validation_message": "Email address need to be unique."
+        },
+        "editor_options": {
+          "title": "Email",
+          "icon_class": "ff-edit-email",
+          "template": "inputText"
+        },
+        "uniqElKey": "el_1759830035088"
+      }
+    ]
+  }
+}

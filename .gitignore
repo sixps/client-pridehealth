@@ -45,6 +45,15 @@ yarn-error.log*
 # Vercel
 .vercel
 
+# Local development files
+local-only/
+
+# npm (we use pnpm)
+package-lock.json
+
+# pnpm
+.pnpm-store/
+
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
