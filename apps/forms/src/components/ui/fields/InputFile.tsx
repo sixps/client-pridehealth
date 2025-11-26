@@ -107,7 +107,9 @@ export function InputFile({ field, value, onChange, error }: InputFileProps) {
       .map(f => f.file)
       .concat(validFiles);
     
-    onChange(attributes.name, allFiles);
+    if (attributes.name) {
+      onChange(attributes.name, allFiles);
+    }
   };
 
   const handleDrop = (e: React.DragEvent) => {
@@ -131,7 +133,9 @@ export function InputFile({ field, value, onChange, error }: InputFileProps) {
     const remainingFiles = uploadedFiles
       .filter(f => f.id !== fileId && f.status === 'completed')
       .map(f => f.file);
-    onChange(attributes.name, remainingFiles);
+    if (attributes.name) {
+      onChange(attributes.name, remainingFiles);
+    }
   };
 
   const formatFileSize = (bytes: number): string => {

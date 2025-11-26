@@ -83,10 +83,10 @@ export function FormWizard({ form, onSubmit }: FormWizardProps) {
     const { attributes, element } = field;
     
     // Check required validation
-    if (attributes.required) {
+    if (attributes.required && attributes.name) {
       const requiredResult = validateRequired(value, attributes.name);
       if (!requiredResult.isValid) {
-        return requiredResult.error;
+        return requiredResult.error || '';
       }
     }
     
@@ -97,7 +97,7 @@ export function FormWizard({ form, onSubmit }: FormWizardProps) {
     switch (element) {
       case 'input_email':
         const emailResult = validateEmail(value);
-        return emailResult.isValid ? '' : emailResult.error;
+        return emailResult.isValid ? '' : (emailResult.error || '');
         
       case 'input_text':
         // Check if it's a phone field based on name or placeholder
@@ -105,7 +105,7 @@ export function FormWizard({ form, onSubmit }: FormWizardProps) {
         const placeholder = attributes.placeholder?.toLowerCase() || '';
         if (fieldName.includes('phone') || placeholder.includes('phone')) {
           const phoneResult = validatePhoneNumber(value);
-          return phoneResult.isValid ? '' : phoneResult.error;
+          return phoneResult.isValid ? '' : (phoneResult.error || '');
         }
         return '';
       
@@ -136,7 +136,7 @@ export function FormWizard({ form, onSubmit }: FormWizardProps) {
     const errors: Record<string, string> = {};
     
     currentFields.forEach(field => {
-      if (field.attributes.required) {
+      if (field.attributes.required && field.attributes.name) {
         const value = formState.data[field.attributes.name];
         if (!value || (Array.isArray(value) && value.length === 0)) {
           errors[field.attributes.name] = `${field.settings.label || field.attributes.name} is required`;
@@ -178,9 +178,11 @@ export function FormWizard({ form, onSubmit }: FormWizardProps) {
     try {
       // Add hidden field values
       const hiddenFields = form.form_fields.fields
-        .filter(field => field.element === 'input_hidden')
+        .filter(field => field.element === 'input_hidden' && field.attributes.name)
         .reduce((acc, field) => {
-          acc[field.attributes.name] = field.attributes.value || '';
+          if (field.attributes.name) {
+            acc[field.attributes.name] = field.attributes.value || '';
+          }
           return acc;
         }, {} as FormSubmissionData);
 

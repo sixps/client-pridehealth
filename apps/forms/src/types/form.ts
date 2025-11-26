@@ -13,12 +13,15 @@ export type FormFieldType =
 
 export interface FormFieldAttributes {
   type?: string;
-  name: string;
-  value?: string;
+  name?: string;
+  value?: string | string[];
   placeholder?: string;
   required?: boolean;
   class?: string;
   id?: string;
+  accept?: string;
+  maxlength?: string | number;
+  [key: string]: any; // Allow additional properties
 }
 
 export interface FormFieldSettings {
@@ -28,12 +31,16 @@ export interface FormFieldSettings {
   validation_rules?: Record<string, any>;
   container_class?: string;
   label_placement?: string;
+  dynamic_default_value?: string;
+  [key: string]: any; // Allow additional properties
 }
 
 export interface FormFieldEditorOptions {
   title: string;
   icon_class?: string;
   template?: string;
+  element?: string;
+  [key: string]: any; // Allow additional properties
 }
 
 export interface FormFieldStylePref {
@@ -64,16 +71,16 @@ export interface FluentForm {
   id: number;
   title: string;
   status: 'published' | 'draft';
-  appearance_settings: any;
+  appearance_settings?: any;
   form_fields: FormFields;
-  has_payment: boolean;
-  type: string;
-  conditions: any[];
-  created_by: string;
-  created_at: string;
-  updated_at: string;
-  form_meta: Record<string, any>;
-  metas: Record<string, any>;
+  has_payment?: boolean;
+  type?: string;
+  conditions?: any[];
+  created_by?: string;
+  created_at?: string;
+  updated_at?: string;
+  form_meta?: Record<string, any>;
+  metas?: Record<string, any>;
 }
 
 export interface FormSubmissionData {

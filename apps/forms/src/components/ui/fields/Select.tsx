@@ -20,7 +20,9 @@ export function Select({ field, value, onChange, error }: SelectProps) {
   const optionEntries = Object.entries(options);
 
   const handleSelect = (optionValue: string) => {
-    onChange(attributes.name, optionValue);
+    if (attributes.name) {
+      onChange(attributes.name, optionValue);
+    }
     setIsOpen(false);
   };
 

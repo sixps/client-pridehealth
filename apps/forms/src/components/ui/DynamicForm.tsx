@@ -29,7 +29,7 @@ export function DynamicForm({ form, onSubmit }: DynamicFormProps) {
     const errors: Record<string, string> = {};
     
     form.form_fields.fields.forEach(field => {
-      if (field.attributes.required && field.element !== 'input_hidden') {
+      if (field.attributes.required && field.element !== 'input_hidden' && field.attributes.name) {
         const value = formState.data[field.attributes.name];
         if (!value || (Array.isArray(value) && value.length === 0)) {
           errors[field.attributes.name] = `${field.settings.label || field.attributes.name} is required`;
@@ -51,9 +51,11 @@ export function DynamicForm({ form, onSubmit }: DynamicFormProps) {
     try {
       // Add hidden field values
       const hiddenFields = form.form_fields.fields
-        .filter(field => field.element === 'input_hidden')
+        .filter(field => field.element === 'input_hidden' && field.attributes.name)
         .reduce((acc, field) => {
-          acc[field.attributes.name] = field.attributes.value || '';
+          if (field.attributes.name) {
+            acc[field.attributes.name] = field.attributes.value || '';
+          }
           return acc;
         }, {} as FormSubmissionData);
 
@@ -100,9 +102,9 @@ export function DynamicForm({ form, onSubmit }: DynamicFormProps) {
             <FormField
               key={field.uniqElKey}
               field={field}
-              value={formState.data[field.attributes.name]}
+              value={field.attributes.name ? formState.data[field.attributes.name] : undefined}
               onChange={handleFieldChange}
-              error={formState.errors[field.attributes.name]}
+              error={field.attributes.name ? formState.errors[field.attributes.name] : undefined}
               index={index}
             />
           ))}

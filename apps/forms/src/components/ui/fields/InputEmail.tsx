@@ -41,7 +41,7 @@ export function InputEmail({ field, value, onChange, error }: InputEmailProps) {
         value={value || ''}
         placeholder={attributes.placeholder || 'Enter your email address'}
         required={attributes.required}
-        onChange={(e) => onChange(attributes.name, e.target.value)}
+        onChange={(e) => attributes.name && onChange(attributes.name, e.target.value)}
         className={`
           w-full px-4 py-4 border border-gray-200 rounded-xl
           focus:ring-2 focus:ring-orange-400 focus:border-orange-400

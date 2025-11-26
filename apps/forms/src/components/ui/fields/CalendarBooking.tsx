@@ -170,7 +170,7 @@ export function CalendarBooking({ field, value, onChange, error }: CalendarBooki
 
   const handleTimeSelect = (time: string) => {
     setSelectedTime(time);
-    if (selectedDate) {
+    if (selectedDate && attributes.name) {
       const appointmentValue = `${selectedDate.toISOString().split('T')[0]} ${time} ${selectedTimezone}`;
       onChange(attributes.name, appointmentValue);
     }
@@ -181,7 +181,7 @@ export function CalendarBooking({ field, value, onChange, error }: CalendarBooki
     setIsTimezoneDropdownOpen(false);
     setTimezoneSearchTerm('');
     // Update appointment value if both date and time are selected
-    if (selectedDate && selectedTime) {
+    if (selectedDate && selectedTime && attributes.name) {
       const appointmentValue = `${selectedDate.toISOString().split('T')[0]} ${selectedTime} ${timezone}`;
       onChange(attributes.name, appointmentValue);
     }
@@ -295,7 +295,7 @@ export function CalendarBooking({ field, value, onChange, error }: CalendarBooki
                 style={{
                   backgroundColor: day.isSelected ? '#f8981d' : 'transparent',
                   color: day.isSelected ? '#ffffff' : (day.timeSlots.length === 0 ? '#d1d5db' : '#000000'),
-                  ringColor: day.isToday ? '#ffbc00' : 'transparent'
+                  ...(day.isToday && !day.isSelected ? { '--tw-ring-color': '#ffbc00' } as React.CSSProperties : {})
                 }}
               >
                 {day.dayNumber}

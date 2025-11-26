@@ -18,7 +18,9 @@ export function InputCheckbox({ field, value = [], onChange, error }: InputCheck
     const newValue = checked 
       ? [...value, optionValue]
       : value.filter(v => v !== optionValue);
-    onChange(attributes.name, newValue);
+    if (attributes.name) {
+      onChange(attributes.name, newValue);
+    }
   };
 
   return (

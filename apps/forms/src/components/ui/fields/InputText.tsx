@@ -27,7 +27,9 @@ export function InputText({ field, value, onChange, error }: InputTextProps) {
       newValue = formatPhoneNumber(newValue);
     }
     
-    onChange(attributes.name, newValue);
+    if (attributes.name) {
+      onChange(attributes.name, newValue);
+    }
   };
 
   return (
@@ -62,7 +64,7 @@ export function InputText({ field, value, onChange, error }: InputTextProps) {
         value={value || ''}
         placeholder={attributes.placeholder}
         required={attributes.required}
-        onChange={(e) => onChange(attributes.name, e.target.value)}
+        onChange={(e) => attributes.name && onChange(attributes.name, e.target.value)}
         className={`
           w-full px-4 py-4 border border-gray-200 bg-white transition-all duration-300 ease-out
           ${error ? 'border-red-400' : ''}

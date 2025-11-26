@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'motion/react';
+import { motion, type Variants } from 'motion/react';
 import { FormField as FormFieldType } from '@/types/form';
 import { FormField } from './FormField';
 
@@ -13,7 +13,7 @@ interface WizardStepProps {
   totalSteps: number;
 }
 
-const stepVariants = {
+const stepVariants: Variants = {
   enter: {
     x: 50,
     opacity: 0,
@@ -25,7 +25,7 @@ const stepVariants = {
     scale: 1,
     transition: {
       duration: 0.35,
-      ease: [0.25, 0.46, 0.45, 0.94],
+      ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number],
     },
   },
   exit: {
@@ -34,7 +34,7 @@ const stepVariants = {
     scale: 0.98,
     transition: {
       duration: 0.25,
-      ease: [0.25, 0.46, 0.45, 0.94],
+      ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number],
     },
   },
 };
@@ -59,10 +59,11 @@ export function WizardStep({
   totalSteps 
 }: WizardStepProps) {
   // Check if there are any errors for the current step fields
-  const hasErrors = fields.some(field => errors[field.attributes.name]);
+  const hasErrors = fields.some(field => field.attributes.name && errors[field.attributes.name]);
   
   // Check if any field has a value (to determine if we should show help text)
   const hasValues = fields.some(field => {
+    if (!field.attributes.name) return false;
     const value = formData[field.attributes.name];
     return value && value !== '';
   });
@@ -140,9 +141,9 @@ export function WizardStep({
           <FormField
             key={field.uniqElKey}
             field={field}
-            value={formData[field.attributes.name]}
+            value={field.attributes.name ? formData[field.attributes.name] : undefined}
             onChange={onFieldChange}
-            error={errors[field.attributes.name]}
+            error={field.attributes.name ? errors[field.attributes.name] : undefined}
             index={index}
           />
         ))}

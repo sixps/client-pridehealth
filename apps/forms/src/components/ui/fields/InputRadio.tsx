@@ -77,7 +77,7 @@ export function InputRadio({ field, value, onChange, error }: InputRadioProps) {
                   name={attributes.name}
                   value={optionValue}
                   checked={value === optionValue}
-                  onChange={(e) => onChange(attributes.name, e.target.value)}
+                  onChange={(e) => attributes.name && onChange(attributes.name, e.target.value)}
                   className="sr-only"
                 />
                 <motion.div
