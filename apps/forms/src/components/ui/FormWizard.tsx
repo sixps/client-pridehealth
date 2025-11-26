@@ -79,7 +79,7 @@ export function FormWizard({ form, onSubmit }: FormWizardProps) {
     };
   }, [totalSteps]);
 
-  const validateField = (field: FormField, value: any) => {
+  const validateField = (field: FormField, value: any): string => {
     const { attributes, element } = field;
     
     // Check required validation
@@ -107,7 +107,10 @@ export function FormWizard({ form, onSubmit }: FormWizardProps) {
           const phoneResult = validatePhoneNumber(value);
           return phoneResult.isValid ? '' : phoneResult.error;
         }
-        break;
+        return '';
+      
+      default:
+        return '';
     }
     
     return '';
@@ -119,7 +122,7 @@ export function FormWizard({ form, onSubmit }: FormWizardProps) {
     const field = allFields.find(f => f.attributes.name === name);
     
     // Validate the field
-    const error = field ? validateField(field, value) : '';
+    const error: string = field ? validateField(field, value) : '';
     
     setFormState(prev => ({
       ...prev,
