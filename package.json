@@ -8,14 +8,15 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "npm run build --workspaces",
-    "test": "npm run test --workspaces",
-    "lint": "npm run lint --workspaces",
-    "clean": "npm run clean --workspaces && rm -rf node_modules"
+    "build": "pnpm run build --recursive",
+    "test": "pnpm run test --recursive",
+    "lint": "pnpm run lint --recursive",
+    "clean": "pnpm run clean --recursive && rm -rf node_modules"
   },
+  "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=18.0.0",
-    "npm": ">=9.0.0"
+    "pnpm": ">=9.0.0"
   },
   "repository": {
     "type": "git",

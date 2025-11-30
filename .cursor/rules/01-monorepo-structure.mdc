@@ -1,0 +1,66 @@
+---
+description: Monorepo structure and development workflow guidelines
+globs: ["**/*"]
+alwaysApply: true
+---
+
+# Monorepo Structure
+
+This is a pnpm monorepo with the following structure:
+
+## Project Structure
+
+### `apps/`
+- **Applications** - Deployable applications (web apps, services, etc.)
+- Each app is a self-contained application with its own dependencies
+- Examples: `apps/forms/` (Next.js form builder application)
+
+### `packages/`
+- **Shared packages** - Reusable libraries, components, utilities
+- Shared code used across multiple apps
+- Can include TypeScript types, UI components, utilities, etc.
+
+## Package Management
+
+- Use **pnpm** as the package manager throughout the project
+- Workspace configuration is in `pnpm-workspace.yaml`
+- Install dependencies: `pnpm install`
+- Add dependency to specific app: `pnpm add <package> --filter forms`
+- Add dependency to root: `pnpm add -w <package>`
+- Run scripts: `pnpm run <script>` (from root) or `pnpm --filter <app> run <script>`
+
+## Development Workflow
+
+### Common Commands
+```bash
+# Install all dependencies
+pnpm install
+
+# Run dev server for specific app
+pnpm --filter forms dev
+
+# Build all apps
+pnpm run build
+
+# Build specific app
+pnpm --filter forms build
+
+# Run linting
+pnpm run lint
+
+# Run tests
+pnpm run test
+```
+
+## Git Remote Configuration
+
+### Remote Repository Setup
+- **Some users may use "upstream" instead of or in addition to "origin" remote**
+- **If "upstream" remote exists, it should be the preferred upstream remote**
+- **Always check available remotes** with `git remote -v` before pushing
+- **Default to upstream remote** for main repository operations when available
+
+### Remote Priority Logic
+- **Prefer "upstream" remote** when both "upstream" and "origin" exist
+- **Fall back to "origin"** if "upstream" doesn't exist
+- **Use appropriate remote** for push/pull operations

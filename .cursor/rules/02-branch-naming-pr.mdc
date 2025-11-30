@@ -1,0 +1,129 @@
+---
+description: Branch naming conventions and pull request guidelines
+globs: ["**/*"]
+alwaysApply: true
+---
+
+# Branch Naming and Pull Request Guidelines
+
+## Branch Naming Convention
+
+**Format:** `<user-prefix>/[<task-id>-]<very-short-hyphenated-description>`
+
+Task IDs are optional. Use one of these formats:
+- With task ID: `<user-prefix>/<task-id>-<description>`
+- Without task ID: `<user-prefix>/<description>`
+
+### Examples:
+- `cmiller/12345-forms-validation-fix` (with Trello card ID)
+- `cmiller/add-new-form-field` (without task ID)
+- `cmiller/update-form-wizard` (without task ID)
+
+### Guidelines:
+- Use your username/initials as prefix
+- Include Trello card ID if available (optional)
+- Keep description short and hyphenated
+- Be descriptive but concise
+- Use lowercase letters and hyphens only
+
+## Pull Request Title Format
+
+**Format:** `[<task-id>: ]<brief-description>`
+
+Task IDs are optional. Use one of these formats:
+- With task ID: `<task-id>: <brief-description>`
+- Without task ID: `<brief-description>`
+
+### Examples:
+- `12345: Fix form validation errors` (with Trello card ID)
+- `Add new date picker field type` (without task ID)
+- `Update form wizard navigation` (without task ID)
+
+### Guidelines:
+- Start with Trello card ID if available (optional)
+- Follow with a colon and space if using task ID
+- Use present tense, imperative mood
+- Keep under 60 characters when possible
+- Be specific about what the PR accomplishes
+
+## Pull Request Description Format
+
+**Required structure for all pull requests:**
+
+1. **Description of changes** at the top
+2. **Task/ticket link** (if using project management tool)
+3. **No file lists** - changed files are already obvious from the diff
+4. **Keep descriptions concise** and focused on what was changed and why
+
+### Example PR Description:
+```
+## Summary
+Added form validation for email fields. Users will now see clear error messages when entering invalid email addresses.
+
+## Related
+[Trello Card](https://trello.com/c/card-id)
+```
+
+**Note:** Include Trello card link if the PR is related to a specific card. If no card exists, omit the "Related" section.
+
+## PR Creation Commands
+
+**Use this streamlined command for creating PRs:**
+
+With Trello card:
+```bash
+gh pr create --title "<task-id>: <brief-description>" --body "## Summary
+<description of changes>
+
+## Related
+[Trello Card](<trello-card-url>)" --base main
+```
+
+Without Trello card:
+```bash
+gh pr create --title "<brief-description>" --body "## Summary
+<description of changes>" --base main
+```
+
+## Quality Checklist
+
+**Before creating PRs:**
+- [ ] Branch name follows convention
+- [ ] PR title includes task ID (if applicable)
+- [ ] Description explains what and why
+- [ ] Task/ticket is linked (if applicable)
+- [ ] No file lists in description
+- [ ] Changes are focused and atomic
+- [ ] Tests pass (if applicable)
+- [ ] Code is linted and formatted
+
+## Commit and PR Message Guidelines
+
+**❌ AVOID EMOJIS in commits and pull requests:**
+- **No emojis in commit messages** - Keep them professional and clear
+- **No emojis in PR titles or descriptions** - Use plain text for better readability
+- **Focus on clear, descriptive language** instead of visual symbols
+
+**Examples of what to avoid:**
+- ❌ `🚀 Add new feature`
+- ❌ `🐛 Fix bug in forms`
+- ❌ `✨ Update UI components`
+
+**Examples of preferred format:**
+- ✅ `Add new feature for form validation`
+- ✅ `Fix bug in form submission flow`
+- ✅ `Update UI components for better accessibility`
+
+## Common Mistakes to Avoid
+
+❌ **Don't include:**
+- Lists of changed files
+- Emojis in titles or descriptions
+- Vague descriptions like "fix stuff"
+- Multiple unrelated changes in one PR
+
+✅ **Do include:**
+- Clear explanation of changes
+- Task/ticket link (if applicable)
+- Focused, single-purpose changes
+- Professional, descriptive language

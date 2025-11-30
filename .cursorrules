@@ -1,0 +1,10 @@
+# Cursor Rules
+
+## Documentation Guidelines
+- Do NOT create unnecessary or excessive .md files documenting everything
+- Keep documentation sparse and human-readable
+- Avoid AI-generated documentation that adds no value
+- Only create documentation when explicitly requested or when it provides clear utility
+- Prefer inline code comments over separate documentation files
+- If documentation is needed, make it concise and actionable
+
